@@ -7,10 +7,10 @@ var mysql      = require('mysql');
  
 var pool      =    mysql.createPool({
     connectionLimit : 85, //important
-    host     : 'localhost',
-    user     : 'root',
-    password : 'root',
-    database : 'erp_db',
+    host     : 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/',
+    user     : 'adminhGslBSq',
+    password : 'M4w-mw6Dbh85',
+    database : 'frainovia',
     debug    :  false
 });
 
